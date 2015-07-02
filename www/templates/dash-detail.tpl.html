@@ -1,0 +1,57 @@
+<ion-view view-title="{{item.name}}">
+  <ion-nav-buttons side="secondary">
+      <button class="button button-clear ion-locked" ng-controller="LoginCtrl" ng-click="doLogout()">
+      </button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <div class="list card">
+        <div class="item item-avatar">
+          <img class="avatar" src="{{item.url}}"/>
+          <div class="" style="overflow: auto;">
+            <div class="pull-left">
+              <h4>{{item.name}}
+                  <i class="icon ion-ios-checkmark energized" ng-show = "item.verified"> </i>
+                  <i class="icon ion-eye assertive"> {{item.views}} </i>
+              </h4>
+              <h5>{{item.price}}</h5>
+            </div>
+            <div class="pull-right">
+              <button class="button button-small button-energized">
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="card-footer text-right" style="margin-top:10px;">
+            <div class="pull-right">
+                <h6>by {{item.vendor}}</h6>
+            </div>
+              <div class="pull-left">
+                  <i class="icon ion-clock"></i> {{item.posted}}
+              </div>
+          </div>
+        </div>
+        <div class="item item-body">
+          <img class="full-image" src="{{item.url}}">
+          <h5> Item Description </h5>
+          <p style="text-align:justify;">
+           {{item.description}}
+          </p>
+        </div>
+
+        <div class="item item-divider">
+          <div class="card-footer text-right" style="">
+            <div class="pull-left">
+                <h6>by {{item.vendor}}</h6>
+            </div>
+              <div class="pull-right">
+                  <i class="icon ion-star energized"></i>
+                  <i class="icon ion-star energized"></i>
+                  <i class="icon ion-star energized"></i>
+                  <i class="icon ion-star energized"></i>
+                  <i class="icon ion-ios-star-half energized"></i>
+              </div>
+          </div>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

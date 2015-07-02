@@ -1,0 +1,13 @@
+<ion-view view-title="Account">
+  <ion-nav-buttons side="secondary">
+      <button class="button button-clear ion-locked" ng-controller="LoginCtrl" ng-click="doLogout()">
+      </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-toggle  ng-model="settings.notifications">
+          Turn on notifications
+      </ion-toggle>
+    </ion-list>
+  </ion-content>
+</ion-view>

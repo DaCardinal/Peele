@@ -1,0 +1,22 @@
+<ion-view view-title="Login" style="">
+  <ion-content has-header="true" class="auth-content">
+    <div class="hero no-header flat" style="box-shadow:none;">
+        <div class="content">
+            <div class="case-avatar-yellow app-icon"></div>
+            <h1 style="color: #4c5550;">Peele</h1>
+        </div>
+    </div>
+    <form class="form-4">
+        <p>
+            <label for="login">Username or email</label>
+            <input type="text" name="login" placeholder="Username or email" ng-model="loginData.username" required>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name='password' placeholder="Password" ng-model="loginData.password" required>
+        </p>
+
+        <button class="button button-block button-energized" type="submit" ng-click="doLogin()">Login</button>
+    </form>
+  </ion-content>
+</ion-view>
